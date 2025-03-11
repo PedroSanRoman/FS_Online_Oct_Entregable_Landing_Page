@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navegacion1 {
+    display: flex;
+    background-color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 1rem;    
+}
+
+.navegacion2 {
+    display: flex;
+    background-color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 1rem;    
+}
+
+.hamburguesa img {
+    width: 3rem;
+}
+
+.logo img {
+    width: 5rem;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: -1.5rem;
+    color: #009d94;
+    list-style: none;
+    font-size: x-small;
+    font-weight: bold;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.idioma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 1rem;
+    gap: 1rem;
+    color: white;
+    border-radius: .5rem;
+    background-color: #e999a0;
+    width: 5rem;
+    height: 0.5rem;
+}
+
+.idioma button {
+    background-color: #e999a0;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.idioma img {
+    width: 1rem;
+}
+
+section {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background:url("./FS_Online_Oct_Entregable_Landing_Page/img/sk_fondo.jpg") no-repeat center/cover;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    scale: .9;
+    margin: 1rem;
+    color: white;
+}
+
+.container1 {
+    background-color: #e999a0;
+    font-size: x-small;
+    font-weight: bold;
+    width: 8rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    translate: 2.7rem;
+    border: none;
+    cursor: pointer;
+}
+
+.container2 {
+    background-color: #e999a0;
+    display: flex;
+    font-size: x-small;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    width: 12rem;
+    padding: .5rem;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    padding:1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.container2 img {
+    width: 1.5rem;
+    filter:invert(1);
+}
+
+.puntosycomentario {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    margin:1rem;
+}
+
+.comentario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: .8;
+    background-color: #e999a0;
+    border-radius: 100%;
+    position: absolute;
+    padding: 1rem;
+    width: 4rem;
+    height:4rem; 
+    cursor: pointer;
+    border:none;
+    z-index: 99;
+}
+
+.comentario img {
+    width: 2rem;
+    filter:invert(1);
+}
+
+.whitedots {
+    width: 10rem;
+    scale:.5;
+    filter:invert(1);
+    z-index: 9;
+    cursor: pointer;
+} 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    font-size: medium;
+    letter-spacing: 2px;
+    background-color: white;
+    height: 100px;
+}
+
+@media all and (max-width:480px) {
+    .navbar {display: none;}
+    .navegacion2, footer {display: none;}    
+    }
+
+@media all and (min-width:480px) and (max-width:768px) {
+    .navegacion1 {display: none;    
+    }
+}
+
+@media all and (min-width:768px) {
+    .navegacion2, footer {display: none;    
+    }
+}
